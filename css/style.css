@@ -1,0 +1,21 @@
+
+:root {
+    color-scheme: light;
+
+    --bs-bg-body: #f8f3eb;
+    --bs-bg-1: #efe5d7;
+    --bs-bg-2: #ffffff;
+
+    --bs-fg-body: #33291f;
+
+    --bs-primary-base: #476b50;
+    --bs-primary-bg: #476b50;
+    --bs-primary-fg: #476b50;
+    --bs-primary-contrast: #ffffff;
+}
+
+.btn-solid.theme-primary {
+    --bs-btn-bg: #476b50;
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #476b50;
+}

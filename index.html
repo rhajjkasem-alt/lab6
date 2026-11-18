@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Rays Cafe</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Rays Cafe</a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" tabindex="-1"
+                id="navbarMenu" aria-labelledby="navbarMenuLabel">
+
+                <div class="drawer-header">
+                    <h2 class="drawer-title" id="navbarMenuLabel">Rays Cafe</h2>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav me-auto mb-2 md:mb-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container mt-5">
+            <h1>Welcome to Rays Cafe</h1>
+            <p>Your campus spot for coffee, snacks, and studying.</p>
+
+            <div id="carouselExample" class="carousel carousel-overlay slide">
+
+                <div class="carousel-inner rounded-5">
+
+                    <div class="carousel-item active">
+                        <img src="images/interiorcafe.jpg"
+                            class="d-block w-100"
+                            alt="Cozy cafe interior with wooden counters and large windows">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/smoothcoffe.jpg"
+                            class="d-block w-100"
+                            alt="Hot latte with leaf-shaped milk foam art">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/interior2.jpeg"
+                            class="d-block w-100"
+                            alt="interior2">
+                    </div>
+
+                </div>
+
+                <div class="carousel-overlay-controls">
+                    <div>
+                        <button class="btn-icon btn-sm" type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-icon-prev" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="btn-icon btn-sm" type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-icon-next" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+
+                        <button type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5" id="menu">
+
+            <h2>More Cafe Favourites</h2>
+            <p>Explore some of our popular drinks and snacks.</p>
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/smoothcoffe.jpg"
+                            class="card-img-top"
+                            alt="Hot latte with leaf-shaped milk foam art">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Maple Latte</h3>
+
+                            <p class="card-text">
+                                A warm espresso latte with maple flavour
+                                and steamed milk.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        Made with espresso, steamed milk,
+                                        and a touch of maple sweetness.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog1">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog1"
+                                aria-labelledby="dialogTitle1">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle1">Maple Latte</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A smooth coffee with maple flavour,
+                                        perfect for a study break.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/matcha.jpg"
+                            class="card-img-top"
+                            alt="Two glasses of green matcha latte with foam art">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Matcha Cloud</h3>
+
+                            <p class="card-text">
+                                A creamy matcha drink with a smooth
+                                and refreshing taste.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        Matcha powder mixed with milk
+                                        for a smooth green tea drink.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog2">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog2"
+                                aria-labelledby="dialogTitle2">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle2">Matcha Cloud</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A refreshing green tea drink for
+                                        students who enjoy matcha.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/cinnamon.jpg"
+                            class="card-img-top"
+                            alt="Glazed cinnamon roll on a dark plate">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Cinnamon Roll</h3>
+
+                            <p class="card-text">
+                                A soft pastry filled with sweet
+                                cinnamon flavour.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        A freshly baked cinnamon roll
+                                        that goes well with coffee.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog3">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog3"
+                                aria-labelledby="dialogTitle3">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle3">Cinnamon Roll</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A sweet bakery treat with soft
+                                        dough and cinnamon sugar.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/coffecold.jpg"
+                            class="card-img-top"
+                            alt="Iced coffee with milk in a tall glass">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Iced Mocha</h3>
+
+                            <p class="card-text">
+                                Cold espresso mixed with chocolate
+                                and milk.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        A chilled coffee drink made with
+                                        espresso, chocolate, and ice.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog4">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog4"
+                                aria-labelledby="dialogTitle4">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle4">Iced Mocha</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A cold chocolate coffee drink
+                                        for an afternoon break.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/scone.jpg"
+                            class="card-img-top"
+                            alt="Berry scones with icing on a cooling rack">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Berry Scone</h3>
+
+                            <p class="card-text">
+                                A baked scone filled with sweet berries.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        A soft pastry baked with mixed
+                                        berries and a golden top.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog5">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog5"
+                                aria-labelledby="dialogTitle5">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle5">Berry Scone</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A delicious berry pastry that
+                                        pairs well with hot drinks.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <section class="card h-100">
+
+                        <img src="images/chai.jpg"
+                            class="card-img-top"
+                            alt="Small glass of hot latte with milk foam art">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Chai Oat Latte</h3>
+
+                            <p class="card-text">
+                                Warm chai spices blended with
+                                creamy oat milk.
+                            </p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">
+                                        Details
+                                    </summary>
+                                    <div class="accordion-body">
+                                        A comforting hot drink made with
+                                        chai spices and oat milk.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button type="button"
+                                class="btn-solid theme-primary mt-3"
+                                data-bs-toggle="dialog"
+                                data-bs-target="#dialog6">
+                                Learn More
+                            </button>
+
+                            <dialog class="dialog" id="dialog6"
+                                aria-labelledby="dialogTitle6">
+
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title"
+                                        id="dialogTitle6">Chai Oat Latte</h4>
+
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="dialog"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="dialog-body">
+                                    <p>
+                                        A warm spiced drink that is
+                                        great for cold campus mornings.
+                                    </p>
+                                </div>
+
+                                <div class="dialog-footer">
+                                    <button type="button"
+                                        class="btn-solid theme-primary"
+                                        data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="container mt-5">
+        <p>&copy; 2026 Rays Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
